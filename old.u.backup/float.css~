@@ -1,0 +1,21 @@
+
+#floats{
+	width: 280px;
+	background: green;
+	float:right;
+}
+
+
+#brad1{
+float: right;
+}
+
+body{
+	background: lightyellow;
+	background-image: url(images/logo-white.png);
+
+}
+
+p{
+color: blue;
+}

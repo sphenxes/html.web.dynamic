@@ -1,0 +1,37 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Aliens Abducted Me - Report an Abduction</title>
+</head>
+<body>
+  <h2>Medicinal Plants Table Latin Name</h2>
+
+
+
+
+
+
+
+<?php
+
+
+
+$LatinName = $_POST['Latin_Name'];
+$AustrianName = $_POST['Austrian_Name'];
+$Comments = $_POST['Comments_Medicinal'];
+
+echo "Latin Name:" . $LatinName . "<br>";
+echo "Austrian Name:" . $AustrianName ."<br>";
+echo "Comments:" . $Comments ."<br>";
+
+?>
+
+</body>
+
+
+</html>

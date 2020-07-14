@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<title> Daily FAQ </title>
+<body>
+    <h1> Daily FAQ  </h1>
+
+<div class="container">
+  <div class="one" Three>
+
+<h3> Daily FAQ  Search </h3>
+
+    <form autocomplete="off" method="POST" action="daily.faq.search.php">
+
+      <br>
+               <select name="tableName">
+
+                    <option value = "otc">  OTC </option>
+                    <option value = "supplements"> Supplements </option>
+                    <option value = "cosmetics"> Cosmetics </option>
+                    <option value = "herbs">  Herbs </option>
+                    <option value = "kids">  Kids</option>
+                    <option value = "frauen"> Frauen </option>
+                    <option value = "aromatherapy"> Aromatherapy </option>
+                    <option value = "ziehschrank"> Ziehschrank </option>
+                    <option value = "medicine">  Medicine</option>
+                    <option value = "vaccines"> Vaccines </option>
+                    <option value = "general"> General </option>
+
+               </select>
+      <br/>
+
+    <br></br>
+    <label>
+        <input type="radio" name="radioTitle" value="question" checked> Question
+    </label>
+
+
+    <label>
+        <input type="radio" name="radioTitle" value="anwer" > Answer
+    </label>
+
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="category" > Category
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="kunde" > Kunde
+    </label>
+    <br/>
+
+</br>
+    <label>
+            <input type="radio" name="radioTitle" value="product"> Product
+    </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses
+    </label>
+    <br/>
+    <label> User </label>
+    <input  autocomplete="off" type="text" name="username">
+    <br>
+    <label> Signature </label>
+    <input  autocomplete="off" type="password" name="signature">
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+<input type="submit" value="submit" name "submit" />
+</form>
+  </p>
+  </div>
+
+
+<div class="two" Two>
+  <h3>Daily FAQ</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" enctype="multipart/form-data" action="daily.faq.php" >
+<label> Select from list Table Name: </label>
+
+<br>
+         <select name="tableName">
+
+              <option value = "otc">  OTC </option>
+              <option value = "supplements"> Supplements </option>
+              <option value = "cosmetics"> Cosmetics </option>
+              <option value = "herbs">  Herbs </option>
+              <option value = "kids">  Kids</option>
+              <option value = "frauen"> Frauen </option>
+              <option value = "aromatherapy"> Aromatherapy </option>
+              <option value = "ziehschrank"> Ziehschrank </option>
+              <option value = "medicine">  Medicine</option>
+              <option value = "vaccines"> Vaccines </option>
+              <option value = "general"> General </option>
+
+         </select>
+<br/>
+<label for ="category"> Category   </label>
+<input autocomplete="off" type="text" id="category" name="category" /> <br>
+
+<label for ="subcategory"> Subcategory  </label>
+<input autocomplete="off" type="text" id="subcategory" name="subcategory" /> <br>
+<br>
+
+<label for ="kunde"> Kunde: </label>
+<input  autocomplete="off" id="kunde" name="kunde"  /> <br/>
+
+<label for ="telephone"> Telephone: </label>
+<input  autocomplete="off" id="telephone" name="telephone"  /> <br/>
+
+<label for ="age"> Age    </label>
+<input autocomplete="off" type="text" id="age" name="age"  /> <br>
+
+</br>
+
+<label for ="question"> Question </label>
+<textarea rows = "7" cols = "35" name = "question">
+</textarea><br>
+
+<label for ="answer"> Answer   </label>
+<textarea rows = "10" cols = "40" name = "answer">
+</textarea><br>
+
+
+<label for ="source"> URL</label>
+<input autocomplete="off" type="text" id="source" name="source"  /> <br>
+
+<label for ="product"> Product</label>
+<input autocomplete="off" type="text" id="product" name="product"  /> <br>
+
+<label for ="dosage"> Dosage</label>
+<input autocomplete="off" type="text" id="dosage" name="dosage"  /> <br>
+
+<label for ="administration"> Adminsteration    </label>
+<input autocomplete="off" type="text" id="administration" name="administration"  /> <br>
+
+<label for ="uses"> Uses and Indications   </label>
+<textarea rows = "5" cols = "30" name = "uses">
+</textarea><br>
+<br>
+<label>
+        <input type="radio" name="radioImages" value="images" checked> Images
+</label>
+
+<label>
+        <input type="radio" name="radioImages" value="files" > Files
+</label>
+<br/>
+<p>
+<label for ="uploadedimages"> Upload Images/Files   </label>
+<input autocomplete="off" type="file" id="uploadedimages" name="uploadedimages" /> <br>
+</p>
+<!--
+<label for ="uploadedfile"> Upload File    </label>
+<input autocomplete="off" type="file" id="uploadedfile" name="uploadedfile" /> <br>
+-->
+
+<br/>
+
+<label for ="comments"> Comments    </label>
+<textarea rows = "5" cols = "35" name = "comments">
+</textarea><br>
+
+<label for ="bibliography"> Bibliography    </label>
+<textarea rows = "7" cols = "35" name = "bibliography">
+</textarea><br>
+
+
+<label for ="username"> user </label>
+<input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+<label for ="signature"> Signature  </label>
+<input autocomplete="off" type="password" id="signature" name="signature" /> <br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+</div>
+
+<div class="three" Two>
+
+  <div class="two" Two>
+  <h3>Append Text Daily FAQ </h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="daily.faq.append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+
+         <option value = "otc">  OTC </option>
+         <option value = "supplements"> Supplements </option>
+         <option value = "cosmetics"> Cosmetics </option>
+         <option value = "herbs">  Herbs </option>
+         <option value = "kids">  Kids</option>
+         <option value = "frauen"> Frauen </option>
+         <option value = "aromatherapy"> Aromatherapy </option>
+         <option value = "ziehschrank"> Zeihschrank </option>
+         <option value = "medicine">  Medicine</option>
+         <option value = "vaccines"> Vaccines </option>
+         <option value = "general"> General </option>
+
+
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+    <input type="radio" name="mainColumn" value="category" checked> Category
+    <input type="radio" name="mainColumn" value="kunde" > Kunde
+    <input type="radio" name="mainColumn" value="uses" > Uses
+<br/>
+    <input type="radio" name="mainColumn" value="question"> Question
+    <input type="radio" name="mainColumn" value="answer"> Answer
+    <input type="radio" name="mainColumn" value="product"> Product
+    </label>
+
+
+  <br/>
+
+  <label for ="search"> Search: </label>
+  <input  pattern=".{3,}"   required title="3 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="appendAnswer"> Append text to Answer: </label>
+  <textarea rows = "5" cols = "40" name = "appendAnswer">
+  </textarea><br>
+
+
+  <label for ="appendUses"> Append text to Uses: </label>
+  <textarea rows = "5" cols = "40" name = "appendUses">
+  </textarea><br>
+
+  <label for ="appendProduct"> Append text to Product: </label>
+  <input autocomplete="off" type="text" id="product" name="appendProduct" /> <br>
+
+  <label for ="appendAdministeration"> Append text to Adminsteration: </label>
+  <textarea rows = "5" cols = "40" name = "appendAdministration">
+  </textarea><br>
+
+
+  <label for ="appendBibliography"> Append text to Bibliography: </label>
+  <textarea rows = "5" cols = "40" name = "appendBibliography">
+  </textarea><br>
+  <br/>
+
+  <label for ="username"> user </label>
+  <input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+  <label for ="appendSignature"> Signature  </label>
+  <input autocomplete="off" type="password" id="appendSignature" name="appendSignature" /> <br>
+
+  <input type="submit" value="submit" name="submit" />
+
+  </form>
+</div>
+
+</div>
+
+</body>
+</html>

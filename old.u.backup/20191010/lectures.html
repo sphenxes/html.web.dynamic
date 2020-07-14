@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> OTC Insert</title>
+
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+</head>
+<body>
+    <h1> Clinical Pharmacology
+    </h1>
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+
+<h3>Search Database Lectures</h3>
+
+<form autocomplete="off" method="POST" action="lectures_search.php">
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+
+                  <option value = "clinicalpharmacology">Clinical Pharmacology</option>
+                  <option value = "microbiology">Microbiology</option>
+                  <option value = "medicine">Medicine</option>
+                  <option value = "otc">OTC</option>
+                  <option value = "faq">FAQ</option>
+
+             </select>
+
+    <br></br>
+
+    <label>
+        <input type="radio" name="radioTitle" value="firstlevel" checked> Anatomical Group
+    </label>
+
+    <label>
+        <input type="radio" name="radioTitle" value="secondlevel" > Drug Classification
+    </label>
+
+     <label>
+        <input type="radio" name="radioTitle" value="atc" > ATC Code
+    </label>
+
+
+    <label>
+        <input type="radio" name="radioTitle" value="instructor" > Instructor
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="clinical"> Clinical
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="physiology"> Physiology
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="therapy"> Therapy
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="mechanism"> Mechanism of Action
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="adverseeffet"> Adverse Effects
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="comments"> Comments
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="bibliography"> Bibliography
+    </label>
+
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+
+    <br>
+
+    <input type="submit" value="submit" name "submit" />
+
+    </form>
+  </p>
+  <br> </br>
+
+  <p>
+     <br>
+
+    <a href="http://apo.marei.info/lectures_search.html" target="_blank">  </a>
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3>Database Herbs</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="lectures.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+         <select name="tableName">
+
+              <option value = "clinicalpharmacology">Clinical Pharmacology</option>
+              <option value = "microbiology">microbiology</option>
+              <option value = "medicine">medicine</option>
+              <option value = "OTC">OTC</option>
+              <option value = "faq">FAQ</option>
+
+         </select>
+<br>
+<p></p>
+
+<label for ="firstlevel"> Anatomical Group </label>
+<input autocomplete="off" type="text" id="firstlevel" name="firstlevel" /> <br>
+
+<label for ="secondlevel"> Drug Classification  </label>
+<input autocomplete="off" type="text" id="secondlevel" name="secondlevel" /> <br>
+
+<label for ="atc"> ATC Code </label>
+<input autocomplete="off" type="text" id="atc" name="atc" /> <br>
+
+<br>
+
+         <select name="instructor">
+
+              <option value = "drahmed">Dr. Ahmed</option>
+              <option value = "drnajib">Dr. Najib</option>
+              <option value = "drbean">Dr. Bean</option>
+              <option value = "drfouda">Dr. A. M. Fouda</option>
+              <option value = "other">other</option>
+
+         </select>
+<br/>
+
+<p></p>
+
+<label for ="clinical"> Clinical  </label>
+<textarea rows = "10" cols = "40" name = "clinical">
+</textarea><br>
+
+
+<label for ="physiology"> Physiology    </label>
+<textarea rows = "10" cols = "40" name = "physiology">
+</textarea><br>
+
+<label for ="therapy"> Therapy  </label>
+<textarea rows = "10" cols = "40" name = "therapy">
+</textarea><br>
+
+<label for ="mechanism"> Mechanims of Action  </label>
+<textarea rows = "7" cols = "40" name = "mechanism">
+</textarea><br>
+
+<label for ="uses"> Uses and Indications  </label>
+<textarea rows = "7" cols = "40" name = "uses">
+</textarea><br>
+
+
+<label for ="adverseeffet"> Adverse Effects  </label>
+<textarea rows = "5" cols = "40" name = "adverseeffet">
+</textarea><br>
+
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<label for ="source"> Source    </label>
+<input autocomplete="off" type="text" id="source" name="source" /> <br>
+
+<label for ="bibliography"> Bibliography  </label>
+<textarea rows = "3" cols = "40" name = "bibliography">
+</textarea><br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+</div>
+
+<div class="three" Two>
+<div>
+  <a href="http://localhost/lectures.html" target="_blank">  </a>
+  </p>
+  </div>
+
+  <div class="two" Two>
+  <h3>Herbs Correct and Append Text</h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="lectures_append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+
+            <option value = "clinicalpharmacology">Clinical Pharmacology</option>
+            <option value = "microbiology">Microbiology</option>
+            <option value = "medicine">Medicine</option>
+            <option value = "OTC">OTC</option>
+            <option value = "faq">FAQ</option>
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+
+  <input type="radio" name="mainColumn" value="firstlevel" checked> Anatomical Group
+  <input type="radio" name="mainColumn" value="secondlevel"> Drug Classification
+  <input type="radio" name="mainColumn" value="atc"> ATC Code
+  <input type="radio" name="mainColumn" value="instructor" > Instructor Name
+
+  </label>
+
+
+<br/>
+
+  <label for ="search"> Search: </label>
+  <input  pattern=".{3,}"   required title="3 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+
+  <label for ="appendClinical"> Append text to Clincial: </label>
+  <textarea rows = "5" cols = "40" name = "appendClinical">
+  </textarea><br>
+
+  <label for ="appendPhyiology"> Append text to Physiology: </label>
+  <textarea rows = "5" cols = "40" name = "appendPhyiology">
+  </textarea><br>
+
+  <label for ="appendTherapy"> Append text to Therapy: </label>
+  <textarea rows = "5" cols = "40" name = "appendTherapy">
+  </textarea><br>
+
+  <label for ="appendMechanism"> Append text to Mechanism: </label>
+  <textarea rows = "5" cols = "40" name = "appendMechanism">
+  </textarea><br>
+
+  <label for ="appendUses"> Append text to Uses: </label>
+  <textarea rows = "5" cols = "40" name = "appendUses">
+  </textarea><br>
+
+  <label for ="appendAdverseEffect"> Append text to Adverse Effet: </label>
+  <textarea rows = "5" cols = "40" name = "appendAdverseEffect">
+  </textarea><br>
+
+  <label for ="appendComment"> Append text to Comments: </label>
+  <textarea rows = "5" cols = "40" name = "appendComment">
+  </textarea><br>
+
+  <label for ="appendSource"> Append text to Source: </label>
+  <textarea rows = "5" cols = "40" name = "appendSource">
+  </textarea><br>
+
+  <label for ="appendBibliography"> Append text to Bibliography: </label>
+  <textarea rows = "5" cols = "40" name = "appendBibliography">
+  </textarea><br>
+
+  <label for ="appendSignature"> Append text to Signature: </label>
+  <textarea rows = "5" cols = "40" name = "appendSignature">
+  </textarea><br>
+
+  <br/>
+
+<input type="submit" value="submit" name="submit" />
+
+</form>
+
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

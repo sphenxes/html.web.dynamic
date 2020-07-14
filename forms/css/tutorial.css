@@ -1,0 +1,69 @@
+h1 {
+font-family: Arial;
+font-size: 22px;
+
+color: darkgreen;
+
+}
+
+h2{
+font-family:  Helvetica;
+font-size: 20px;
+color: green;
+}
+
+
+h3{
+font-family: Helvetica;
+font-size: 18px;
+color: green;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 95%;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	border: 3px solid black;
+	height: 2500px;
+	font: Arial;
+	font-size: 16px;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+.item{
+flex: 1 1 0;
+}
+
+.one {
+	background-color: blue;
+		flex: 1 1 0;
+}
+
+.two {
+	background-color: yellow;
+	flex: 1 1 0;
+
+}
+
+.three {
+	background-color: green;
+		flex: 1 1 0;
+}
+
+.alpha{
+	background: red;
+}
+
+.beta{
+	background: grey;
+}
+
+.gamma{
+	background: pink;
+}

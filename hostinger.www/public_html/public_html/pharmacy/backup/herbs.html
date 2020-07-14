@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <title> Herbs</title>
+
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+</head>
+
+<body>
+    <h1> Herbs Database
+    </h1>
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+
+<h3>Search Database Herbs</h3>
+
+<form autocomplete="off" method="POST" action="herbs_search.php">
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+
+               <option value = "heilpflanzen">Heilpflanzen</option>
+                <option value = "aromatherapy">Aromatherapy</option>
+                  <option value = "apo">Apotheke</option>
+
+             </select>
+
+
+    <br></br>
+
+    <label>
+        <input type="radio" name="radioTitle" value="plant" checked> Plant Name
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="botanic"> Botanic Name
+
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses
+    </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="ingrediants"> Ingrediants
+    </label>
+
+<!--
+    <label>
+            <input type="radio" name="radioTitle" value="arzneibuch"> Arzneibuch
+    </label>
+
+
+
+    <label>
+        <input type="radio" name="radioTitle" value="mechanism"> Mechanism
+      </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="contraindication"> Contraindication
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="bibliography"> Bibliography
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="sprache"> Language
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="signature"> Signature
+    </label>
+-->
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+
+
+    <br>
+
+    <input type="submit" value="submit" name "submit" />
+
+    </form>
+  </p>
+  <br> </br>
+
+  <p>
+     <br>
+
+    <a href="http://pharmacy.pharmacology.today/herbs.html" target="_blank">  </a>
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3>Database Herbs</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="herbs.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+
+         <select name="tableName">
+
+              <option value = "heilpflanzen">Heilpflanzen</option>
+
+              <option value = "aromatherapy">Aromatherapy</option>
+              <option value = "apo">apo</option>
+
+         </select>
+<br>
+<br>
+
+
+<label for ="plant"> Plant Name</label>
+<input  autocomplete="off" id="plant" name="plant"  /> <br/>
+
+<label for ="botanic"> Botanic    </label>
+<input autocomplete="off" type="text" id="botanic" name="botanic" /> <br>
+
+<label for ="arzneibuch"> Arzneibuch    </label>
+<input autocomplete="off" type="text" id="arzneibuch" name="arzneibuch" /> <br>
+<br>
+
+<label for ="uses"> Uses and Indications  </label>
+<textarea rows = "7" cols = "40" name = "uses">
+</textarea><br>
+
+
+<label for ="mechanism"> Mechanims of Action  </label>
+<textarea rows = "7" cols = "40" name = "mechanism">
+</textarea><br>
+
+
+<label for ="contraindication"> Contraindications  </label>
+<textarea rows = "5" cols = "40" name = "contraindication">
+</textarea><br>
+
+
+<label for ="ingrediants"> Ingrediants  </label>
+<textarea rows = "3" cols = "40" name = "ingrediants">
+</textarea><br>
+
+
+<label for ="tees"> Teemischung  </label>
+<textarea rows = "3" cols = "40" name = "tees">
+</textarea><br>
+
+
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<label for ="bibliography"> Bibliography  </label>
+<textarea rows = "3" cols = "40" name = "bibliography">
+</textarea><br>
+
+<label>
+    <input type="radio" name="sprache" value="english" checked> English
+    <input type="radio" name="sprache" value="german"> German
+</label>
+<br>
+
+<label for ="signature"> Signature  </label>
+<input autocomplete="off" type="text" id="signature" name="signature" /> <br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+<div>
+  <a href="http://pharmacy.pharmacology.today/herbs.html" target="_blank">  </a>
+  </p>
+  </div>
+
+  <div class="two" Two>
+  <h3>Herbs Correct and Append Text</h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="herbs_append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+
+            <option value = "heilpflanzen">Heilpflanzen</option>
+
+            <option value = "aromatherapy">Aromatherapy</option>
+            <option value = "apo">apo</option>
+
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+  <input type="radio" name="mainColumn" value="plant" checked> Plant Name
+  <input type="radio" name="mainColumn" value="botanic"> Botanic Name
+  <br>
+  <input type="radio" name="mainColumn" value="arzneibuch"> Arzneibuch
+  <br>
+  </label>
+
+
+<br/>
+
+  <label for ="search"> Search: </label>
+
+  <!-- <input  autocomplete="off" id="search" name="search"  /> <br/> -->
+  <input  pattern=".{4,}"   required title="2 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="appendUses"> Append text to Uses: </label>
+  <!-- <input  pattern=".{2,}"   required title="2 characters minimum" autocomplete="off" id="appendUses" name="appendUses"  /> <br/> -->
+  <textarea rows = "7" cols = "35" name = "appendUses">
+  </textarea><br>
+
+
+  <label for ="appendMechanism"> Append text to Mechanism: </label>
+  <textarea rows = "5" cols = "35" name = "appendMechanism">
+  </textarea><br>
+
+
+  <label for ="appendContraindication"> Append text to Contraindication: </label>
+  <textarea rows = "2" cols = "35" name = "appendContraindication">
+  </textarea><br>
+
+
+  <label for ="appendIngrediant"> Append text to Ingrediants: </label>
+  <textarea rows = "3" cols = "35" name = "appendIngrediant">
+  </textarea><br>
+
+
+
+  <label for ="appendTeemischung"> Append text to Teeemischung: </label>
+  <textarea rows = "7" cols = "35" name = "appendTeemischung">
+  </textarea><br>
+
+  <label for ="appendBibliography"> Append text to Bibliography: </label>
+  <textarea rows = "3" cols = "35" name = "appendBibliography">
+  </textarea><br>
+
+  <!--
+    <label for="correction"> Append Text: </label>
+    <br/>
+    <input type="radio" name="correction" value="appending" checked> Append Text
+    <input type="radio" name="correction" value="correct"> Correct Text
+    </label>
+    <br/>
+    <br/>
+
+    <label for="appendColumn"> Choose your title: </label>
+    <br/>
+    <input type="radio" name="appendColumn" value="uses" checked> Uses
+    <input type="radio" name="appendColumn" value="contraindication"> Contraindication
+    <input type="radio" name="appendColumn" value="tees"> Teemischung
+    <br/>
+    <input type="radio" name="appendColumn" value="bibliography" > Bibliography
+    <input type="radio" name="appendColumn" value="comments"> Comments
+
+    </label>
+  -->
+<!-- IMages and Sources
+  <label for ="appendImages"> Append text to Images: </label>
+  <input   autocomplete="off" id="appendImages" name="appendImages"  /> <br/>
+
+  <label for ="appendSource"> Append text to Source: </label>
+  <input   autocomplete="off" id="appendSource" name="appendSource"  /> <br/>
+
+
+
+  <label for ="appendComment"> Append text to Comments: </label>
+  <textarea rows = "7" cols = "40" name = "appendComment">
+  </textarea><br>
+-->
+
+
+<!--
+  <label for ="appendSignature"> Append text to Signature: </label>
+  <textarea rows = "7" cols = "40" name = "appendSignature">
+  </textarea><br>
+-->
+  <br/>
+
+<input type="submit" value="submit" name="submit" />
+
+</form>
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

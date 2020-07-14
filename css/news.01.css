@@ -1,0 +1,86 @@
+h1 {
+font-family: Arial;
+font-size: 22px;
+
+color: darkgreen;
+justify-content: center;
+}
+
+h2{
+font-family:  Georgia;
+font-size: 20px;
+color: darkgreen;
+}
+
+
+h3{
+font-family: Georgia;
+font-size: 18px;
+color: darkgreen;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding:10px;
+
+}
+.container{
+	max-width: 95%;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	border: 3px solid black;
+	height: 2500px;
+	font: Georgia;
+	font-size: 16px;
+	padding: 1em;
+	line-height: 1.5em;
+	justify-content: space-around;
+	//padding: 10px;
+}
+
+.item{
+flex: 1 1 0;
+padding:10px;
+}
+
+.one {
+	background-color: lightgreen;
+		flex: 1 1 0;
+		padding:10px;
+
+}
+
+.two {
+	background-color: yellow;
+	flex: 1 1 0;
+padding:20px;
+}
+
+.three {
+	background-color: springgreen;
+		flex: 1 1 0;
+		padding:20px;
+}
+
+.alpha{
+	background: red;
+	padding:20px;
+}
+
+.beta{
+	background: grey;
+	padding:20px;
+}
+
+.gamma{
+	background: pink;
+	padding:20px;
+}
+
+
+#https://stackoverflow.com/questions/10868640/align-html-input-fields-by
+

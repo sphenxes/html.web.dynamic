@@ -1,0 +1,134 @@
+
+
+
+
+<html>
+
+<head>
+<title> What is in the News? </title>
+<link rel="stylesheet" type="text/css" href="css/news.css">
+</head>
+
+
+<body>
+    <h1> MYSQL Submit Form for Actual News
+
+    </h1>
+
+
+
+
+  <h1> Actual News</h1>
+  <h2> Choose one of the following Tables </h2>
+
+
+<ol type ="square">
+    <li>Apo</li>
+    <li>Computer</li>
+    <li>Culture</li>
+    <li>Economy</li>
+    <li>General</li>
+    <li>Politics</li>
+    <li>Programming </li>
+    <li>Science</li>
+    <li>Sports</li>
+
+</ol>
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+    Box :
+  As the industrial economy improves, the supply companies grow sales,
+  and then operating margin leverage kicks in;
+   the opposite occurs when a downturn is in place.
+   You can see this pattern in the upswing from 2002 to 2008,
+  the downswing from 2008 to mid-2009, and another upswing from mid-2009 to 2015.
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3> Enter The Plant Name</h3>
+  <div class="form01">
+
+<form method="POST" action="news.php">
+
+<label for ="tableName"> Table Name: </label>
+<input type="text" id="tableName" name="tableName" /> <br/>
+
+<label for ="title"> Title: </label>
+<input  id="title" name="title" /> <br/>
+
+<label for ="source"> Source    </label>
+<input type="url" id="source" name="source" /> <br>
+
+<label for ="subject"> Subject    </label>
+<input type="text" id="subject" name="subject" /> <br>
+
+<label for ="author"> Author    </label>
+<input type="text" id="author" name="author" /> <br>
+
+<label for ="summary"> Summary    </label>
+<input type="text" id="summary" name="summary" /> <br>
+
+<label for ="comments"> Comments    </label>
+<input type="text" id="comments" name="comments" /> <br>
+
+<label for ="datum"> Current Date    </label>
+<input type="text" id="datum" name="datum" /> <br>
+
+<label for ="bibliography"> Bibliography    </label>
+<input type="text" id="bibliography" name="bibliography" /> <br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+
+<div class="alpha">
+<p>
+  Box 1 alpha:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+<div class="beta">
+<p>
+  Box 2 Beta:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+<div class="gamma">
+<p>
+  Box 3 Gamma:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

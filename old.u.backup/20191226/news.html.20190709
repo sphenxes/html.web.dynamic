@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+<title> What is in the News? </title>
+<link rel="stylesheet" type="text/css" href="css/news.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+</head>
+
+
+<body>
+    <h1> Store News in Database
+
+    </h1>
+
+
+
+
+  <h1> Actual News</h1>
+<!--  <h2> Choose one of the following Tables </h2>
+
+
+<ol type ="square">
+    <li>Apo</li>
+    <li>Computer</li>
+    <li>Culture</li>
+    <li>Economy</li>
+    <li>General</li>
+    <li>Politics</li>
+    <li>Programming </li>
+    <li>Science</li>
+    <li>Sports</li>
+
+</ol>
+-->
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+    Box 1:
+  As the industrial economy improves, the supply companies grow sales,
+  and then operating margin leverage kicks in;
+   the opposite occurs when a downturn is in place.
+   You can see this pattern in the upswing from 2002 to 2008,
+  the downswing from 2008 to mid-2009, and another upswing from mid-2009 to 2015.
+  </p>
+  <br> </br>
+
+  <p>
+    Search Link <br>
+
+    <a href="news_search.html" target="_blank"> Search Database </a>
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3>Database News</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="news.php">
+<!-- <label for ="tableName"> Table Name: </label> -->
+<label>Select from list Table Name: </label>
+<!--
+<input type="radio" name="radio" value="insert">Insert
+<input type="radio" name="radio" value="search 2">Search
+-->
+<br>
+
+         <select name="tableName">
+
+              <option value = "Politics">Politics</option>
+              <option value = "Medicine">Medicine</option>
+              <option value = "Books">Books</option>
+              <option value = "Pharmacy">Pharmacy</option>
+              <option value = "Pharmaceutics">Pharmaceutics</option>
+              <option value = "Herbs">Herbs</option>
+              <option value = "Electronics">Electronics</option>
+              <option value = "Movies">Movies</option>
+              <option value = "Programming">Programming</option>
+              <option value = "Economy">Economy</option>
+              <option value = "History">History</option>
+              <option value = "Philosophy">Philosophy</option>
+              <option value = "Science">Science</option>
+              <option value = "Computer">Computer</option>
+              <option value = "Chess">Chess</option>
+              <option value = "Sports">Sports</option>
+              <option value = "Culture">Culture</option>
+              <option value = "General">General</option>
+              <option value = "Publications">Publications</option>
+              <option value = "Apo">Apo</option>
+              <option value = "Test">Test</option>
+<!--
+              <option value = "Delete">Delete Last Row from Choosen Table</option>
+            -->
+         </select>
+<br>
+
+<!-- <input type="text" id="tableName" name="tableName" value="Politics" /> <br/> -->
+
+<label for ="source"> Source    </label>
+<input autocomplete="off" type="url" id="source" name="source" /> <br>
+
+<label for ="title"> Title: </label>
+<input  autocomplete="off" id="title" name="title"  /> <br/>
+
+<label for ="subject"> Subject    </label>
+<input autocomplete="off" type="text" id="subject" name="subject" /> <br>
+
+<label for ="author"> Author    </label>
+<input autocomplete="off" type="text" id="author" name="author"  /> <br>
+
+<label for ="summary"> Summary    </label>
+<textarea rows = "10" cols = "50" name = "summary">
+</textarea><br>
+<!-- <input type="text" id="summary" name="summary" /> <br> -->
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<!-- <label for ="datum"> Current Date    </label>
+<input type="text" id="datum" name="datum" /> <br> -->
+
+<label for ="bibliography"> Bibliography    </label>
+<input autocomplete="off" type="text" id="bibliography" name="bibliography"  /> <br>
+
+<!--
+<label for ="delete"> Delete    </label>
+<input autocomplete="off" type="text" id="delete" name="delete"  /> <br>
+-->
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+
+<div class="alpha">
+<p>
+  Box 1 alpha:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+<div class="beta">
+<p>
+  Box 2 Beta:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+<div class="gamma">
+<p>
+  Box 3 Gamma:
+In a nutshell, the answers to the questions above are "very" and "yes." Here's why.
+Let's start by looking at the chart below.
+As you can see, over the long term, the operating margins of industrial-supply
+companies have tended to follow the trend of U.S. industrial production.
+</p>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
+
+
+<!--
+
+Step by Step Guide on How to Solve the Encoding Issues with Weird Characters
+When creating the database in MySQL make sure all the string fields have utf8_spanish_ci charset and the charset of the tables is
+utf_unicode_ci (you can change it later in phpMyAdmin going to Operations > Collation)
+Make sure you specify a Content-type in all your HTML files, inside the <head> tag:
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+And in those files you output without HTML headers (XML, AJAX/JSON calls, APIs…) put this in the PHP:
+header("Content-Type: text/html;charset=utf-8");
+When establishing the connection between PHP and MySQL send this query before any other:
+mysql_query("SET NAMES 'utf8'");
+Remove the DefaultCharset in Apache or modify it
+Following these steps will solve the weird accents problem in your server. If it still doesn’t work post a comment below and we’ll help you.
+https://xaviesteve.com/1223/issues-with-accents-and-strange-characters-in-php-mysql-solved/
+-->

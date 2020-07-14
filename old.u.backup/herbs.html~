@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+<form method="POST" action="herbs.php">
+
+<label for ="Latin_Name">Latin Name: </label>
+<input type="text" id="Latin_Name" name="Latin_Name" /> <b/>
+
+
+<label for ="Austrian_Name">Austrian Name: </label>
+<input type="text" id="Austrian_Name" name="Austrian_Name" /> <b />
+
+<label for = "Comments_Medicinal">Comments Medicinal: </label>
+<input type="text" id="Comments_Medicinal" name="Comments_Medicinal" /> <b />
+
+<input type="submit" value="submit" name "submit" />
+
+
+
+
+
+</form>
+
+</body>
+</html>

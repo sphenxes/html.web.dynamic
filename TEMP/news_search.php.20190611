@@ -1,0 +1,52 @@
+
+<?php
+/*https://coolestguidesontheplanet.com/how-to-connect-to-a-mysql-database-with-php*/
+ini_set("display_errors",1);
+       error_reporting(E_ALL);
+
+$servername="localhost:3306";
+$username="hesham";
+$password="Hysedchshm0204";
+$database="News";
+
+$connection = mysqli_connect($servername, $username, $password, $database);
+
+$myTable=$_POST['tableName'];
+$mySearchTerm=$_POST['searchterm'];
+
+/*
+$mySubject = $_POST['subject'];
+$myAuthor = $_POST['author'];
+*/
+
+//$query = "SELECT * FROM {$myTableName} where {$myTitle} like '%{$mySearchTerm}%' "; Working Version
+//$query = "SELECT * FROM {$myTable} where title like '%{$mySearchTerm}%' or subject like '%{$mySearchTerm}%' or summary like '%{$mySearchTerm}%'";
+
+$query = "SELECT * FROM {$myTable}
+where (title like '%{$mySearchTerm}%' or subject like '%{$mySearchTerm}%'  or author like '%{$mySearchTerm}%') ";
+
+mysqli_query($connection, $query) or die('Error querying database.');
+$result = mysqli_query($connection, $query);
+
+echo "<table border='1'>";
+echo "<tr> <th>Subject </th> <th> Summary</th> </tr>";
+
+while ($row = mysqli_fetch_array($result))
+{
+
+	
+echo "<tr><td>";	
+echo  "<a href='" .$row['source']. "'>" . $row['title'] ."</a>" ;
+#echo  $row['source'] . '' .'<br />';
+echo "</td><td>"; 
+
+#echo "<tr><td>";	
+echo  $row['summary'] . ' ' .'<br />';
+echo "</td> <td>"; 
+
+
+}
+
+echo "</table>";
+
+?>

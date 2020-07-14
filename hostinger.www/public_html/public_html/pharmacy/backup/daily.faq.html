@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <h1> Daily FAQ  </h1>
+
+<div class="container">
+  <div class="one" Three>
+
+<h3> Daily FAQ  Search </h3>
+
+    <form autocomplete="off" method="POST" action="daily.faq.search.php">
+
+      <br>
+               <select name="tableName">
+
+                    <option value = "otc">  otc </option>
+                    <option value = "supplements"> supplements </option>
+                    <option value = "cosmetics"> cosmetics </option>
+                    <option value = "herbs">  Herbs </option>
+                    <option value = "kids">  kids</option>
+                    <option value = "frauen"> frauen </option>
+                    <option value = "aromatherapy"> aromatherapy </option>
+                    <option value = "ziehschrank"> zeihschrnak </option>
+                    <option value = "medicine">  medicine</option>
+                    <option value = "vaccines"> vaccines </option>
+                    <option value = "general"> general </option>
+
+               </select>
+      <br/>
+
+    <br></br>
+
+    <label>
+            <input type="radio" name="radioTitle" value="category" checked> Category
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="kunde" > Kunde
+    </label>
+    <br/>
+    <label>
+        <input type="radio" name="radioTitle" value="question" > Question
+    </label>
+
+
+    <label>
+        <input type="radio" name="radioTitle" value="anwer" > Answer
+    </label>
+</br>
+    <label>
+            <input type="radio" name="radioTitle" value="product"> Product
+    </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses
+    </label>
+    <br/>
+
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+<input type="submit" value="submit" name "submit" />
+</form>
+  </p>
+  </div>
+
+
+<div class="two" Two>
+  <h3>Daily FAQ</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" enctype="multipart/form-data" action="daily.faq.php" >
+<label> Select from list Table Name: </label>
+
+<br>
+         <select name="tableName">
+
+              <option value = "otc">  otc </option>
+              <option value = "supplements"> supplements </option>
+              <option value = "cosmetics"> cosmetics </option>
+              <option value = "herbs">  Herbs </option>
+              <option value = "kids">  kids</option>
+              <option value = "frauen"> frauen </option>
+              <option value = "aromatherapy"> aromatherapy </option>
+              <option value = "ziehschrank"> zeihschrnak </option>
+              <option value = "medicine">  medicine</option>
+              <option value = "vaccines"> vaccines </option>
+              <option value = "general"> general </option>
+
+         </select>
+<br/>
+<label for ="category"> Category   </label>
+<input autocomplete="off" type="text" id="category" name="category" /> <br>
+
+<label for ="subcategory"> Subcategory  </label>
+<input autocomplete="off" type="text" id="subcategory" name="subcategory" /> <br>
+<br>
+
+<label for ="kunde"> Kunde: </label>
+<input  autocomplete="off" id="kunde" name="kunde"  /> <br/>
+
+<label for ="telephone"> Telephone: </label>
+<input  autocomplete="off" id="telephone" name="telephone"  /> <br/>
+
+<label for ="age"> Age    </label>
+<input autocomplete="off" type="text" id="age" name="age"  /> <br>
+
+</br>
+
+<label for ="question"> Question </label>
+<textarea rows = "7" cols = "35" name = "question">
+</textarea><br>
+
+<label for ="answer"> Answer   </label>
+<textarea rows = "10" cols = "40" name = "answer">
+</textarea><br>
+
+<label for ="product"> Product</label>
+<input autocomplete="off" type="text" id="product" name="product"  /> <br>
+
+<label for ="dosage"> Dosage</label>
+<input autocomplete="off" type="text" id="dosage" name="dosage"  /> <br>
+
+<label for ="administration"> Adminsteration    </label>
+<input autocomplete="off" type="text" id="administration" name="administration"  /> <br>
+
+<label for ="uses"> Uses and Indications   </label>
+<textarea rows = "5" cols = "30" name = "comments">
+</textarea><br>
+
+<label for ="uploadedimages"> Upload Images   </label>
+<input autocomplete="off" type="file" id="uploadedimages" name="uploadedimages" /> <br>
+
+<label for ="uploadedfile"> Upload File    </label>
+<input autocomplete="off" type="file" id="uploadedfile" name="uploadedfile" /> <br>
+
+<br/>
+
+<label for ="comments"> Comments    </label>
+<textarea rows = "5" cols = "35" name = "comments">
+</textarea><br>
+
+<label for ="bibliography"> Bibliography    </label>
+<textarea rows = "7" cols = "35" name = "bibliography">
+</textarea><br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+</div>
+
+<div class="three" Two>
+
+  <div class="two" Two>
+  <h3>Append Text Daily FAQ </h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="daily.faq.append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+
+         <option value = "otc">  otc </option>
+         <option value = "supplements"> supplements </option>
+         <option value = "cosmetics"> cosmetics </option>
+         <option value = "herbs">  Herbs </option>
+         <option value = "kids">  kids</option>
+         <option value = "frauen"> frauen </option>
+         <option value = "aromatherapy"> aromatherapy </option>
+         <option value = "ziehschrank"> zeihschrnak </option>
+         <option value = "medicine">  medicine</option>
+         <option value = "vaccines"> vaccines </option>
+         <option value = "general"> general </option>
+
+
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+    <input type="radio" name="mainColumn" value="category" checked> Category
+    <input type="radio" name="mainColumn" value="kunde" > Kunde
+    <input type="radio" name="mainColumn" value="uses" > Uses
+<br/>
+    <input type="radio" name="mainColumn" value="question"> Question
+    <input type="radio" name="mainColumn" value="answer"> Answer
+    <input type="radio" name="mainColumn" value="product"> Product
+    </label>
+
+
+  <br/>
+
+  <label for ="search"> Search: </label>
+  <input  pattern=".{3,}"   required title="3 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="answer"> Append text to Answer: </label>
+  <textarea rows = "5" cols = "40" name = "aswer">
+  </textarea><br>
+
+
+  <label for ="uses"> Append text to Uses: </label>
+  <textarea rows = "5" cols = "40" name = "uses">
+  </textarea><br>
+
+  <label for ="product"> Append text to Product: </label>
+  <input autocomplete="off" type="text" id="product" name="product" /> <br>
+
+  <label for ="administeration"> Append text to Adminsteration: </label>
+  <textarea rows = "5" cols = "40" name = "administration">
+  </textarea><br>
+
+
+  <label for ="bibliography"> Append text to Bibliography: </label>
+  <textarea rows = "5" cols = "40" name = "bibliography">
+  </textarea><br>
+  <br/>
+
+  <input type="submit" value="submit" name="submit" />
+
+  </form>
+</div>
+
+</div>
+
+</body>
+</html>

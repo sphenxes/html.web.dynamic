@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147022497-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147022497-1');
+  </script>
+
+
+  <title> Vaccination </title>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <h1> Vaccination Database
+    </h1>
+  <h1> Vaccines </h1>
+
+<div class="container">
+  <div class="one" Three>
+
+    <form method="POST" action="vaccine.search.php">
+
+      <label>Select Table Name: </label>
+
+             <select name="tableName">
+              <option value = "vaccine"> Vaccine</option>
+
+             </select>
+
+    <br></br>
+    <label>
+            <input type="radio" name="radioTitle" value="disease" checked> Disease
+    </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="clinical" > Clinical
+    </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="pathogen" > Pathogen
+    </label>
+    <br/>
+    <label>
+        <input type="radio" name="radioTitle" value="trademark" > Trade Name
+    </label>
+    <br/>
+    <label>
+            <input type="radio" name="radioTitle" value="vaccine"> Vaccine
+    </label>
+    <br/>
+    <label>
+            <input type="radio" name="radioTitle" value="contraindication"> Contraindication
+    </label>
+    <br/>
+    <label>
+            <input type="radio" name="radioTitle" value="bibliography"> Bibliography
+    </label>
+</br>
+    <label> User </label>
+    <input  type="text" name="username">
+    <br>
+    <label> Signature </label>
+    <input  type="password" name="signature">
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+<input type="submit" value="submit" name "submit" />
+</form>
+  </p>
+  </div>
+
+
+<div class="two" Two>
+  <h3>Database Vaccination</h3>
+  <div class="form01">
+
+<form  method="POST" action="vaccine.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+
+         <select name="tableName">
+
+              <option value = "vaccine"> Vaccine </option>
+
+
+         </select>
+
+
+<br>
+    <label for ="disease"> Disease: </label>
+    <input  autocomplete="off" id="disease" name="disease"  /> <br/>
+
+    <label for ="pathogen"> Pathogen   </label>
+    <input autocomplete="off" type="text" id="pathogen" name="pathogen" /> <br>
+
+
+
+<p>
+<label for ="clinical"> Clinical Picture   </label>
+</p>
+<textarea rows = "5" cols = "35" name = "clinical">
+</textarea><br>
+
+
+<p>
+<label for ="vaccine"> Vaccine    </label>
+</p>
+<textarea rows = "7" cols = "35" name = "vaccine">
+</textarea><br>
+<p>
+<label for ="trademark"> Trademark    </label>
+</p>
+<textarea rows = "5" cols = "35" name = "trademark">
+</textarea><br>
+
+
+
+
+<p>
+<label for ="epidemiology"> Epidemiology  </label>
+</p>
+<textarea rows = "5" cols = "35" name = "epidemiology">
+</textarea><br>
+
+
+<label>
+        <input type="radio" name="radioProperty" value="aktive">Aktive
+        <input type="radio" name="radioProperty" value="passiv">Passiv
+        <input type="radio" name="radioProperty" value="other" checked> Other
+</label>
+
+<br/>
+
+<label>
+        <input type="radio" name="radioLife" value="life">Attenuated
+        <input type="radio" name="radioLife" value="dead">Dead
+        <input type="radio" name="radioLife" value="other" checked> Other
+</label>
+
+<br/>
+
+<p>
+<label for ="administration"> Adminsteration    </label>
+</p>
+<textarea rows = "7" cols = "35" name = "administration">
+</textarea><br>
+
+
+<label for ="age"> Age    </label>
+<input autocomplete="off" type="text" id="age" name="age"  /> <br>
+
+<label for ="dosage"> Dosage    </label>
+<input autocomplete="off" type="text" id="dosage" name="dosage"  /> <br>
+
+
+<p>
+<label for ="uses"> Uses and Indications   </label>
+</p>
+<textarea rows = "7" cols = "35" name = "uses">
+</textarea><br>
+
+<label for ="contraindication"> Contraindication    </label>
+<input autocomplete="off" type="text" id="contraindication" name="contraindication"  /> <br>
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<p>
+<label for ="bibliography"> Bibliography    </label>
+</p>
+<textarea rows = "10" cols = "35" name = "bibliography">
+</textarea><br>
+
+<label for ="username"> User  </label>
+<input  type="text" id="username" name="username" /> <br>
+
+<label for ="signature"> Signature  </label>
+<input  type="password" id="signature" name="signature" /> <br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+
+
+
+  <div class="two" Two>
+  <h3>Vaccine Correct and Append Text</h3>
+  <div class="form01">
+
+  <form  method="POST" action="vaccine.append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+         <option value = "vaccine"> Vaccine</option>
+
+
+
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+    <input type="radio" name="mainColumn" value="disease" checked> Disease
+    <input type="radio" name="mainColumn" value="pathogen"> pathogen
+    <br/>
+    <input type="radio" name="mainColumn" value="clinical" > Clinical
+    <input type="radio" name="mainColumn" value="trademark" > Trade Mark
+<br/>
+    <input type="radio" name="mainColumn" value="vaccine"> Vaccine
+
+    </label>
+
+
+  <br/>
+
+  <label for ="search"> Search: </label>
+  <input  pattern=".{3,}"   required title="3 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="epidemiology"> Append text to Epidemiology: </label>
+  <textarea rows = "5" cols = "40" name = "epidemiology">
+  </textarea><br>
+
+
+  <label for ="clinical"> Append text to Clinical Picture: </label>
+  <textarea rows = "5" cols = "40" name = "clinical">
+  </textarea><br>
+
+  <label for ="vaccine"> Append text to Vaccine: </label>
+  <input autocomplete="off" type="text" id="vaccine" name="vaccine" /> <br>
+
+  <label for ="trademark"> Append to Trade Mark: </label>
+  <input autocomplete="off" type="text" id="trademark" name="trademark" /> <br>
+
+  <label for ="age"> Append text to Age: </label>
+  <input autocomplete="off" type="text" id="age" name="age" /> <br>
+
+  <label for ="dosage"> Append text to Dosage: </label>
+  <input autocomplete="off" type="text" id="dosage" name="dosage" /> <br>
+
+  <label for ="administeration"> Append text to Adminsteration: </label>
+  <textarea rows = "5" cols = "40" name = "administration">
+  </textarea><br>
+
+  <label for ="uses"> Append text to Uses: </label>
+  <textarea rows = "5" cols = "40" name = "uses">
+  </textarea><br>
+
+  <label for ="contraindication"> Append text to Contraindication: </label>
+  <textarea rows = "5" cols = "40" name = "contraindication">
+  </textarea><br>
+
+  <label for ="comment"> Append text to Comments: </label>
+  <textarea rows = "5" cols = "40" name = "comment">
+  </textarea><br>
+
+  <label for ="bibliography"> Append text to Bibliography: </label>
+  <textarea rows = "5" cols = "40" name = "bibliography">
+  </textarea><br>
+  <br/>
+
+  <label for ="username"> User  </label>
+  <input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+  <label for ="appendSignature"> Signatures  </label>
+  <input autocomplete="off" type="password" id="appendSignature" name="appendSignature" /> <br>
+
+
+  <input type="submit" value="submit" name="submit" />
+
+  </form>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> What is in the News? </title>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1> Actual News</h1>
+<div class="container">
+  <div class="one" Three>
+  <p>
+
+    <form autocomplete="off" method="POST" action="asrari.search.php">
+
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+
+                  <option value = "asrari">Asrari</option>
+                  <option value = "userlog">Users </option>
+
+             </select>
+    <br></br>
+    <label>
+            <input type="radio" name="radioTitle" value="homepage" checked> Home Page
+    </label>
+    <br>
+    <label>
+            <input type="radio" name="radioTitle" value="url" > URL
+    </label>
+     <br>
+     <label>
+             <input type="radio" name="radioTitle" value="email"> email
+     </label>
+     <br>
+     <label>
+        <input type="radio" name="radioTitle" value="user_name" > User Name
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="radioTitle" value="firstname"> First Name
+      </label>
+      <label>
+        <input type="radio" name="radioTitle" value="lastname"> Last Name
+      </label>
+
+<br>
+
+    <label> User </label>
+    <input  autocomplete="off" type="text" name="username">
+<br>
+    <label> Signature </label>
+    <input  autocomplete="off" type="password" name="signature">
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <p>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+      </p>
+  </p>
+  <p>
+<input type="submit" value="submit" name "submit" />
+
+  </p>
+</form>
+<br/>
+  </div>
+
+<div class="two" Two>
+  <h3>Database News</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="asrari.php">
+
+<label>Select from list Table Name: </label>
+<br>
+         <select name="tableName">
+           <option value = "asrari">Asrari</option>
+           <option value = "userlog">Users </option>
+         </select>
+<br>
+<label for ="url">   Source  </label>
+<input autocomplete="off" type="url"  name="url" /> <br>
+<label for ="homepage">   Home Page   </label>
+<input type="text"  name="homepage" /> <br>
+<label for ="email">  email   </label>
+<input type="text"  name="email" /> <br>
+<label for ="password"> Password    </label>
+<input autocomplete="off" type="text"  name="password" /> <br>
+<br>
+<label  for ="user_name"> User    </label>
+<input autocomplete="off" type="text"  name="user_name" /> <br>
+<label for ="emailsecond"> Second email    </label>
+<input type="text"  name="emailsecond" /> <br>
+<br>
+
+<label for ="question">   Question  </label>
+<input autocomplete="off" type="text"  name="question" /> <br>
+<label for ="registrationkey">  Registeration Key   </label>
+<textarea rows = "7" cols = "35" name = "registrationkey">
+</textarea><br>
+<label for ="general">  General   </label>
+<textarea rows = "7" cols = "35" name = "general">
+</textarea><br>
+<label for ="misc">   Misc  </label>
+<input autocomplete="off" type="text"  name="misc" /> <br>
+<br>
+<label for ="firstname">   First Name  </label>
+<input autocomplete="off" type="text"  name="firstname" /> <br>
+<label for ="lastname">   Last Name  </label>
+<input autocomplete="off" type="text"  name="lastname" /> <br>
+<label for ="telephonenumber">  Telephone Number   </label>
+<input autocomplete="off" type="text"  name="telephonenumber" /> <br>
+<label for ="address"> Address    </label>
+<textarea rows = "5" cols = "35" name = "address">
+</textarea><br>
+<br>
+<label for ="username"> User  </label>
+<input type="text" id="username" name="username" /> <br>
+<label for ="signature"> Signature  </label>
+<input type="password" id="signature" name="signature" /> <br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+
+<div class="alpha">
+<p>
+  Box 1 alpha:
+
+</p>
+</div>
+
+<div class="beta">
+<p>
+  Box 2 Beta:
+</p>
+</div>
+
+<div class="gamma">
+<p>
+  Box 3 Gamma:
+</p>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

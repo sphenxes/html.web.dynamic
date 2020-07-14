@@ -1,0 +1,239 @@
+
+
+
+
+<?php
+session_start();
+?>
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147017050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147017050-1');
+</script>
+
+
+<head>
+<title> What is in the News? </title>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+</head>
+
+<body>
+
+
+
+
+    <h1> Actual News</h1>
+
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+
+    <form autocomplete="off" method="POST" action="news.search.php">
+
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+
+                  <option value = "Politics">Politics</option>
+                  <option value = "Medicine">Medicine</option>
+                  <option value = "Books">Books</option>
+                  <option value = "Pharmacy">Pharmacy</option>
+                  <option value = "Pharmaceutics">Pharmaceutics</option>
+                  <option value = "Herbs">Herbs</option>
+                  <option value = "Electronics">Electronics</option>
+                  <option value = "Movies">Movies</option>
+                  <option value = "Programming">Programming</option>
+                  <option value = "Economy">Economy</option>
+                  <option value = "History">History</option>
+                  <option value = "Philosophy">Philosophy</option>
+                  <option value = "Science">Science</option>
+                  <option value = "Computer">Computer</option>
+                  <option value = "Chess">Chess</option>
+                  <option value = "Sports">Sports</option>
+                  <option value = "Culture">Culture</option>
+                  <option value = "General">General</option>
+                  <option value = "Publications">Publications</option>
+                  <option value = "Apo">Apo</option>
+                  <option value = "Family">Family</option>
+
+             </select>
+
+    <br></br>
+
+    <label>
+        <input type="radio" name="radioTitle" value="title" checked> Title
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="subject"> Subject
+    </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="summary"> Summary
+    </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="bibliography"> Bibliography
+    </label>
+    <br>
+
+    <label>
+            <input type="radio" name="radiosearch" value="datasearch" checked> Search Data
+    </label>
+    <br>
+    <label>
+            <input type="radio" name="radiosearch" value="datumsearch"> Search History
+    </label>
+    <br>
+
+    <label> Date From </label>
+    <input  autocomplete="off" type="text" name="firstdatum">
+    <br>
+
+    <label> Date to </label>
+    <input  autocomplete="off" type="text" name="seconddatum">
+    <br>
+
+    <label> User </label>
+    <input  autocomplete="off" type="text" name="username">
+<br>
+    <label> Signature </label>
+    <input  autocomplete="off" type="password" name="signature">
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <p>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+      </p>
+  </p>
+  <p>
+<input type="submit" value="submit" name "submit" />
+
+  </p>
+</form>
+<br/>
+
+  </div>
+
+
+
+<div class="two" Two>
+  <h3>Database News</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="news.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+
+         <select name="tableName">
+
+              <option value = "Politics">Politics</option>
+              <option value = "Medicine">Medicine</option>
+              <option value = "Books">Books</option>
+              <option value = "Pharmacy">Pharmacy</option>
+              <option value = "Pharmaceutics">Pharmaceutics</option>
+              <option value = "Herbs">Herbs</option>
+              <option value = "Electronics">Electronics</option>
+              <option value = "Movies">Movies</option>
+              <option value = "Programming">Programming</option>
+              <option value = "Economy">Economy</option>
+              <option value = "History">History</option>
+              <option value = "Philosophy">Philosophy</option>
+              <option value = "Science">Science</option>
+              <option value = "Computer">Computer</option>
+              <option value = "Chess">Chess</option>
+              <option value = "Sports">Sports</option>
+              <option value = "Culture">Culture</option>
+              <option value = "General">General</option>
+              <option value = "Publications">Publications</option>
+              <option value = "Apo">Apo</option>
+              <option value = "Family">Family</option>
+
+         </select>
+<br>
+
+
+<label for ="source"> Source    </label>
+<input autocomplete="off" type="url" id="source" name="source" /> <br>
+
+<label for ="title"> Title: </label>
+<input  autocomplete="off" id="title" name="title"  /> <br/>
+
+<label for ="subject"> Subject    </label>
+<input autocomplete="off" type="text" id="subject" name="subject" /> <br>
+
+
+<label for ="summary"> Summary    </label>
+<textarea rows = "7" cols = "40" name = "summary">
+</textarea><br>
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<label for ="bibliography"> Bibliography    </label>
+<input autocomplete="off" type="text" id="bibliography" name="bibliography"  /> <br>
+
+<label for ="username"> User  </label>
+<input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+<label for ="signature"> Signature  </label>
+<input autocomplete="off" type="password" id="signature" name="signature" /> <br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+
+<div class="alpha">
+<p>
+  Box 1 alpha:
+
+</p>
+</div>
+
+<div class="beta">
+<p>
+  Box 2 Beta:
+</p>
+</div>
+
+<div class="gamma">
+<p>
+  Box 3 Gamma:
+</p>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

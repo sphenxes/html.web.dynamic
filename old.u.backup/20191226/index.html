@@ -1,0 +1,183 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+
+<html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147017050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147017050-1');
+</script>
+
+<head>
+<title> Pharmacy and Pharmacology </title>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+    <h1> Pharmacy </h1>
+<div class="container">
+
+  <div class="one" Three>
+
+    <form autocomplete="off" method="POST" action="index.php">
+  <p>
+
+    <label for ="absolutealcohol"> Enter Stock Solution Alcohol in %:   </label>
+    <input autocomplete="off" type="text" id="absolutealcohol" name="absolutealcohol" /> <br>
+
+
+    <label for ="dilutedalcohol"> Diluted Alcohol in %: </label>
+    <input autocomplete="off" type="text" id="diltuedalcohol" name="dilutedalcohol" /> <br>
+
+    <label for ="totalamount"> Total Amount in ml:</label>
+    <input autocomplete="off" type="text" id="totalamount" name="totalamount" /> <br>
+
+<!--
+    <label>
+        <input type="radio" name="ml" value="ml" checked> ml
+        <input type="radio" name="liter" value="liter"> liter
+    </label>
+-->
+    <br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+
+    <p>
+    <img src="../images/under.construction.01.gif" alt="Under Construction till Jan 2022" height="130" width="200">
+    </p>
+
+<!--
+<form autocomplete="off" method="POST" action="index.php">
+
+    <label> User </label>
+    <input  autocomplete="off" type="text" name="username">
+<br>
+    <label> Signature </label>
+    <input  autocomplete="off" type="password" name="signature">
+
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+
+  <p>
+<input type="submit" value="submit" name "submit" />
+
+  </p>
+</form>
+-->
+<br/>
+
+  </div>
+
+
+<div class="two" Two>
+
+  <div class="form01">
+
+
+
+<h2>Select a link: </h2>
+
+
+<a href="https://www.marei.info/news.html" a target="_blank"> 1.News </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/aromatherapy.html" target="_blank">2.Aromatherpay </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/clinical.pharmacology.html" target="_blank"> 3.Clinical Pharmacology </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/vaccine.html" target="_blank"> 4.Vaccines </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/herbs.html" target="_blank"> 5.Herbs </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/daily.faq.html" target="_blank"> 6.Daily FAQ </a>
+<br>
+<a href="https://pharmacy.pharmacology.today/phytotherapy.html"  target="_blank"> 7.Phytotherapy </a>
+<br>
+
+<a href="https://pharmacy.pharmacology.today/upload.html"  target="_blank""> 8.Upload </a>
+<br>
+
+<a href="https://pharmacy.pharmacology.today/asrari.html"  target="_blank""> 9.Asrari </a>
+<br>
+
+<br>
+
+<p>
+<img src="../images/under.construction.02.gif" alt="Under Construction till Jan 2022" height="200" width="180">
+</p>
+
+</div>
+
+</div>
+
+<div class="three" Two>
+
+  <p>
+  <img src="../images/under.construction.jpg" alt="Under Construction till Jan 2022" height="200" width="180">
+  </p>
+
+
+
+      <form autocomplete="off" method="POST" action="index.alcohol.php">
+<h4> Stock Solution </h4>
+
+<!--
+      <p>
+      <label for ="absolutealcoholvolume"> Enter Stock Solution Alcohol in (v/v)%:   </label>
+      <input autocomplete="off" type="text" name="absolutealcoholvolume" /> <br>
+      </p>
+-->
+      <p>
+      <label for ="absolutealcoholmass"> Table XXXI find Stock Solution Alcohol in (m/m)% :   </label>
+      <input autocomplete="off" type="text"  name="absolutealcoholmass" /> <br>
+      </p>
+
+      <p>
+        <label for ="dichtestock"> Table XXX Denisty of Stock Solution:   </label>
+      <input autocomplete="off" type="text"  name="dichtestock" /> <br>
+    </p>
+
+    <p>
+      <label for ="absolutevolume"> Volume of Stock Solution:   </label>
+    <input autocomplete="off" type="text"  name="absolutevolume" /> <br>
+    </p>
+<h4> Diluted Solution </h4>
+
+<!--
+
+    <p>
+      <label for ="dilutedalcoholvolume"> Enter Diluted Solution Alcohol in (v/v)%:   </label>
+      <input autocomplete="off" type="text" name="diltuedalcoholvolume" /> <br>
+    </p>
+-->
+      <p>
+      <label for ="dilutedalcoholmass"> Table XXXI find Diluted Solution Alcohol in (m/m)% :   </label>
+      <input autocomplete="off" type="text"  name="dilutedalcoholmass" /> <br>
+    </p>
+
+      <p>
+      <label for ="dichtediluted"> Table XXX Denisty of Diluted Solution:   </label>
+      <input autocomplete="off" type="text"  name="dichtediluted" /> <br>
+    </p>
+
+
+      <br>
+
+  <input type="submit" value="submit" name "submit" />
+
+  </form>
+
+
+</div>
+
+</body>
+</html>

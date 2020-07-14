@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title> Medicinal Herbs </title>
+<link rel="stylesheet" type="text/css" href="css/tutorial.css">
+</head>
+
+
+<body>
+
+<p id="upper_margin"></p>
+
+<div id="mainContainer">
+
+<h1> Medicinal Plant Table Latin Names</h1>
+<h2> Enter Herbs Names into Data Bank Called Tutorial </h2>
+
+<div id="borders">
+
+<form method="POST" action="tutorial.php">
+
+
+<label for ="plantsName"> Plants Name: </label>
+<input type="text" id="plantsName" name="plantsName" /> <br/>
+
+
+<label for ="comments"> Comments    </label>
+<input type="text" id="comments" name="comments" /> <br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+
+
+
+</form>
+
+</div>
+
+<p>Test Flaot
+</p>
+
+</div>
+
+</body>
+</html>
+
+

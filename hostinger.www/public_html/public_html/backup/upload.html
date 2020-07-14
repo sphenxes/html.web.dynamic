@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<title> Upload Files </title>
+<body>
+
+  <div class="container">
+    <div class="one" Three>
+    <h1> Upload Files  </h1>
+
+    <form method="post" action="upload.php" enctype="multipart/form-data">
+
+      <input type="radio" name="radioTitle" value="images" checked> Images
+      <input type="radio" name="radioTitle" value="files" > Files
+
+    <p>File :</p>
+    <input type="file" name="filename">
+
+    <p>Title :</p>
+    <input type="text" name="title">
+
+    <p>Subject :</p>
+    <input type="text" name="subject">
+
+    <p>Source :</p>
+    <input type="url" name="source">
+
+    <p>Description</p>
+    <textarea rows="5" cols="35" name="description"></textarea>
+    <br/>
+
+    <label> Signature</p>
+    <input  autocomplete="off" type="text" name="signature">
+
+    <input TYPE="submit" name="upload" value="Submit"/>
+    </form>
+</div>
+
+<div class="two" Two>
+  <h3>Upload Images</h3>
+  <div class="form01">
+
+  </div>
+
+  <br>
+  <form autocomplete="off" method="POST" action="upload.images.viewer.php">
+
+  <label>Select from list Table Name: </label>
+
+  <br>
+
+           <select name="tableName">
+                <option value = "images">Images</option>
+            </select>
+</label>
+
+</br>
+
+<label>
+    <input type="radio" name="radioTitle" value="title" checked> Title
+</label>
+
+<label>
+        <input type="radio" name="radioTitle" value="subject"> Subject
+</label>
+<br>
+<label>
+        <input type="radio" name="radioTitle" value="description"> Description
+</label>
+<br>
+
+  <label for ="title"> Title: </label>
+  <input  autocomplete="off" id="title" name="title"  /> <br/>
+
+  <label for ="subject"> Subject    </label>
+  <input autocomplete="off" type="text" id="subject" name="subject" /> <br>
+
+  <label for ="description"> Description    </label>
+  <input autocomplete="off" type="text" id="description" name="description" /> <br>
+
+  <label for ="filename"> Description    </label>
+  <input autocomplete="off" type="text" name="filename" /> <br>
+
+
+  <p>
+  <label for ="searchterm"> Enter Your Search    </label>
+  <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+  </p>
+
+  <input type="submit" value="submit" name "submit" />
+
+  </form>
+
+
+
+  </div>
+
+</body>
+</head>

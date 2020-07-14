@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/float.css">
+<title> Medicinal Herbs </title>
+</head>
+
+<body >
+
+
+<img src="images/11.jpg" >
+
+<p>
+WASHINGTON — At 9:34 on the November morning after Donald J. Trump was 
+elected president in 2016, Kirill Dmitriev, 
+the head of Russia’s sovereign wealth fund 
+and an informal envoy for President Vladimir V. Putin, 
+sent a text message to a Lebanese-American friend with ties to the Trump campaign.
+</p>
+
+<div id="floats">
+
+<p>
+Mr. Dmitriev wanted to connect quickly with someone in Mr. Trump’s inner circle,
+ preferably Donald Trump Jr. or Jared Kushner. 
+ By the end of the month, he was in touch with Rick Gerson, 
+ a friend of Mr. Kushner who manages a New York hedge fund.
+
+</p>
+
+</div>
+
+<p>
+Mr. Dmitriev and Mr. Gerson worked together on a two-page proposal
+for how the nations could cooperate on a variety of fronts. 
+That document, the report said, later made its way to Mr. Kushner, Rex W. Tillerson,
+the incoming secretary of state, and Stephen K. Bannon, Mr. Trump’s chief strategist.
+Nothing came of the idea that the Russian sovereign fund would invest with Mr. Gerson.
+
+</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <title> OTC Insert</title>
+
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+</head>
+
+<body>
+    <h1> Herbs Database
+    </h1>
+
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+
+<h3>Search Database Lectures</h3>
+
+<form autocomplete="off" method="POST" action="lectures_search.php">
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+
+                  <option value = "pharmacology">pharmacology</option>
+                  <option value = "microbiology">microbiology</option>
+                  <option value = "aromatherapy">Aromatherapy</option>
+                  <option value = "otc">OTC</option>
+                  <option value = "faq">FAQ</option>
+
+             </select>
+
+
+    <br></br>
+
+    <label>
+        <input type="radio" name="radioTitle" value="classification" checked> classification
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="disease"> Disease
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="physiology"> physiology
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="aetiology"> aetiology
+    </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="mechanism"> Mechanism of Action
+    </label>
+
+
+    <label>
+            <input type="radio" name="radioTitle" value="medicine"> medicine
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="contraindication"> Contraindication
+    </label>
+
+    <label>
+            <input type="radio" name="radioTitle" value="bibliography"> Bibliography
+    </label>
+
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+
+
+    <br>
+
+    <input type="submit" value="submit" name "submit" />
+
+    </form>
+  </p>
+  <br> </br>
+
+  <p>
+     <br>
+
+    <a href="http://apo.marei.info/lectures_search.html" target="_blank">  </a>
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3>Database Herbs</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="lectures.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+
+         <select name="tableName">
+
+              <option value = "pharmacology">pharmacology</option>
+              <option value = "microbiology">microbiology</option>
+              <option value = "aromatherapy">Aromatherapy</option>
+              <option value = "OTC">OTC</option>
+              <option value = "faq">FAQ</option>
+
+         </select>
+<br>
+
+<label for ="classification"> Classification </label>
+<input  autocomplete="off" id="classification" name="classification"  /> <br/>
+
+<label for ="disease"> disease  </label>
+<textarea rows = "3" cols = "40" name = "disease">
+</textarea><br>
+
+<label for ="physiology"> physiology    </label>
+<input autocomplete="off" type="text" id="physiology" name="physiology" /> <br>
+
+<label for ="aetiology"> aetiology    </label>
+<input autocomplete="off" type="text" id="aetiology" name="aetiology" /> <br>
+
+
+<label for ="medicine"> medicine  </label>
+<textarea rows = "3" cols = "40" name = "medicine">
+</textarea><br>
+
+<label for ="mechanism"> Mechanims of Action  </label>
+<textarea rows = "7" cols = "40" name = "mechanism">
+</textarea><br>
+
+<label for ="uses"> Uses and Indications  </label>
+<textarea rows = "7" cols = "40" name = "uses">
+</textarea><br>
+
+
+<label for ="contraindication"> Contraindications  </label>
+<textarea rows = "5" cols = "40" name = "contraindication">
+</textarea><br>
+
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<label for ="bibliography"> Bibliography  </label>
+<textarea rows = "3" cols = "40" name = "bibliography">
+</textarea><br>
+
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+<div>
+  <a href="http://localhost/lectures.html" target="_blank">  </a>
+  </p>
+  </div>
+
+  <div class="two" Two>
+  <h3>Herbs Correct and Append Text</h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="lectures_append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+
+            <option value = "pharmacology">pharmacology</option>
+            <option value = "microbiology">microbiology</option>
+            <option value = "aromatherapy">Aromatherapy</option>
+            <option value = "OTC">OTC</option>
+            <option value = "faq">FAQ</option>
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+  <input type="radio" name="mainColumn" value="classification" checked> classification Name
+  <input type="radio" name="mainColumn" value="physiology"> physiology Name
+  <input type="radio" name="mainColumn" value="aetiology"> aetiology
+  </label>
+
+
+<br/>
+
+  <label for ="search"> Search: </label>
+
+  <!-- <input  autocomplete="off" id="search" name="search"  /> <br/> -->
+  <input  pattern=".{4,}"   required title="2 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="appendUses"> Append text to Uses: </label>
+  <!-- <input  pattern=".{2,}"   required title="2 characters minimum" autocomplete="off" id="appendUses" name="appendUses"  /> <br/> -->
+  <input  autocomplete="off" id="appendUses" name="appendUses"  /> <br/>
+
+  <label for ="appendMechanism"> Append text to Mechanism: </label>
+  <input  autocomplete="off" id="appendMechanism" name="appendMechanism"  /> <br/>
+
+  <label for ="appendContraindication"> Append text to Contraindication: </label>
+  <input   autocomplete="off" id="appendContraindication" name="appendContraindication"  /> <br/>
+
+  <label for ="appendIngrediant"> Append text to medicine: </label>
+  <input   autocomplete="off" id="appendIngrediant" name="appendIngrediant"  /> <br/>
+
+  <label for ="appendTeemischung"> Append text to Teeemischung: </label>
+  <input   autocomplete="off" id="appendTeemischung" name="appendTeemischung"  /> <br/>
+
+  <label for ="appendComment"> Append text to Comments: </label>
+  <input   autocomplete="off" id="appendComment" name="appendComment"  /> <br/>
+
+  <label for ="appendBibliography"> Append text to Bibliography: </label>
+  <input   autocomplete="off" id="appendBibliography" name="appendBibliography"  /> <br/>
+
+  <label for ="appendSignature"> Append text to Signature: </label>
+  <input  autocomplete="off" id="appendSignature" name="appendSignature"  /> <br/>
+
+  <br/>
+
+<input type="submit" value="submit" name="submit" />
+
+</form>
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

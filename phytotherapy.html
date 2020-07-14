@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Phytotherapy</title>
+<link rel="stylesheet" type="text/css" href="css/news.01.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <h1> Phytotherapy Database    </h1>
+<div class="container">
+
+  <div class="one" Three>
+  <p>
+
+<h3>Search Database Phytotherapy</h3>
+
+<form autocomplete="off" method="POST" action="phytotherapy.search.php">
+    <label>Select Table Name: </label>
+
+             <select name="tableName">
+                <option value = "phytotherapy">Phytotherapy</option>
+               <option value = "heilpflanzen">Heilpflanzen</option>
+              
+
+
+             </select>
+
+
+    <br></br>
+    <label>
+        <input type="radio" name="radioTitle" value="phytotherapy" checked> Phytotherapy
+    </label>
+<br>
+    <label>
+        <input type="radio" name="radioTitle" value="plant" > Medicinal Plant
+    </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="botanic"> Botanic Name
+    </label>
+<br>
+
+    <label>
+            <input type="radio" name="radioTitle" value="uses"> Uses and Indications
+    </label>
+<br>
+    <label>
+        <input type="radio" name="radioTitle" value="tees"> Teemischung
+      </label>
+<br>
+    <label>
+            <input type="radio" name="radioTitle" value="ingrediants"> Ingrediants
+    </label>
+    <br>
+    <label> User </label>
+    <input  autocomplete="off" type="text" name="username">
+    <br>
+    <label> Signature </label>
+    <input  autocomplete="off" type="password" name="signature">
+
+    <br></br>
+    <label for ="searchterm"> Enter Your Search    </label>
+    <input autocomplete="off" type="text" id="searchterm" name="searchterm" /> <br>
+    <p>  </p>
+
+
+    <br>
+
+    <input type="submit" value="submit" name "submit" />
+
+    </form>
+  </p>
+  <br> </br>
+
+  <p>
+     <br>
+
+    <a href="http://pharmacy.pharmacology.today/phytotherapy.html" target="_blank">  </a>
+  </p>
+  </div>
+
+<div class="two" Two>
+  <h3>Database Phytotherapy</h3>
+  <div class="form01">
+
+<form autocomplete="off" method="POST" action="phytotherapy.php">
+
+<label>Select from list Table Name: </label>
+
+<br>
+
+         <select name="tableName">
+           <option value = "phytotherapy">Phytotherapy</option>
+          <option value = "heilpflanzen">Heilpflanzen</option>
+          <option value = "aromatherapy">Aromatherapy</option>
+
+         </select>
+<br>
+<br>
+
+<label for ="phytotherapy"> Phytotherapy    </label>
+<input autocomplete="off" type="text" id="phytotherapy" name="phytotherapy" /> <br>
+
+<label for ="plant"> Medicinal Plant</label>
+<input  autocomplete="off" id="plant" name="plant"  /> <br/>
+
+<label for ="botanic"> Botanic    </label>
+<input autocomplete="off" type="text" id="botanic" name="botanic" /> <br>
+
+
+<br>
+
+<label for ="uses"> Uses and Indications  </label>
+<textarea rows = "7" cols = "40" name = "uses">
+</textarea><br>
+
+
+<label for ="mechanism"> Mechanims of Action  </label>
+<textarea rows = "7" cols = "40" name = "mechanism">
+</textarea><br>
+
+
+<label for ="contraindication"> Contraindications  </label>
+<textarea rows = "5" cols = "40" name = "contraindication">
+</textarea><br>
+
+
+<label for ="ingrediants"> Ingrediants  </label>
+<textarea rows = "3" cols = "40" name = "ingrediants">
+</textarea><br>
+
+
+<label for ="tees"> Teemischung  </label>
+<textarea rows = "3" cols = "40" name = "tees">
+</textarea><br>
+
+
+
+<label for ="comments"> Comments    </label>
+<input autocomplete="off" type="text" id="comments" name="comments" /> <br>
+
+<label for ="bibliography"> Bibliography  </label>
+<textarea rows = "3" cols = "40" name = "bibliography">
+</textarea><br>
+
+<label>
+    <input type="radio" name="sprache" value="english" checked> English
+    <input type="radio" name="sprache" value="german"> German
+</label>
+<br>
+
+<label for ="username"> User  </label>
+<input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+<label for ="signature"> Signature  </label>
+<input autocomplete="off" type="password" id="signature" name="signature" /> <br>
+
+<input type="submit" value="submit" name "submit" />
+
+</form>
+</div>
+
+
+</div>
+
+<div class="three" Two>
+<div>
+  <a href="http://pharmacy.pharmacology.today/phytotherapy.html" target="_blank">  </a>
+  </p>
+  </div>
+
+  <div class="two" Two>
+  <h3>Herbs Correct and Append Text</h3>
+  <div class="form01">
+
+  <form autocomplete="off" method="POST" action="phytotherapy.append.php">
+
+  <label>Select from list Table Name: </label>
+  <br>
+
+       <select name="tableName">
+         <option value = "phytotherapy">Phytotherapy</option>
+        <option value = "heilpflanzen">Heilpflanzen</option>
+        <option value = "aromatherapy">Aromatherapy</option>
+
+
+       </select>
+  </br>
+
+  <br/>
+
+  <label>
+    <input type="radio" name="mainColumn" value="phytotherapy" checked> Phytotherapy
+    <br>
+  <input type="radio" name="mainColumn" value="plant" > Medicinal Plant
+  <input type="radio" name="mainColumn" value="botanic"> Botanic Name
+  <br>
+  </label>
+
+
+<br/>
+
+  <label for ="search"> Search: </label>
+
+  <!-- <input  autocomplete="off" id="search" name="search"  /> <br/> -->
+  <input  pattern=".{4,}"   required title="2 characters minimum" autocomplete="off" id="search" name="search"  /> <br/>
+
+  <br/>
+
+  <label for ="appendUses"> Append text to Uses: </label>
+  <!-- <input  pattern=".{2,}"   required title="2 characters minimum" autocomplete="off" id="appendUses" name="appendUses"  /> <br/> -->
+  <textarea rows = "7" cols = "35" name = "appendUses">
+  </textarea><br>
+
+
+  <label for ="appendMechanism"> Append text to Mechanism: </label>
+  <textarea rows = "5" cols = "35" name = "appendMechanism">
+  </textarea><br>
+
+
+  <label for ="appendContraindication"> Append text to Contraindication: </label>
+  <textarea rows = "2" cols = "35" name = "appendContraindication">
+  </textarea><br>
+
+
+  <label for ="appendIngrediant"> Append text to Ingrediants: </label>
+  <textarea rows = "3" cols = "35" name = "appendIngrediant">
+  </textarea><br>
+
+
+
+  <label for ="appendTeemischung"> Append text to Teeemischung: </label>
+  <textarea rows = "7" cols = "35" name = "appendTeemischung">
+  </textarea><br>
+
+  <label for ="appendBibliography"> Append text to Bibliography: </label>
+  <textarea rows = "3" cols = "35" name = "appendBibliography">
+  </textarea><br>
+
+  <label for ="username"> User  </label>
+  <input autocomplete="off" type="text" id="username" name="username" /> <br>
+
+  <label for ="appendSignature"> Signature  </label>
+  <input autocomplete="off" type="password" id="appendSignature" name="appendSignature" /> <br>
+
+  <br/>
+
+<input type="submit" value="submit" name="submit" />
+
+</form>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
